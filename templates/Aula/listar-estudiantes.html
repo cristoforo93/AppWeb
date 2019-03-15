@@ -1,0 +1,12 @@
+{% extends 'Aula/base.html' %}
+
+
+{%block usuario%}
+
+<ul>
+    {% for estudiante in inscritos %}
+    <li> {{estudiante.numero_carnet}} </li>
+    {%endfor%}
+</ul>
+
+{%endblock%}

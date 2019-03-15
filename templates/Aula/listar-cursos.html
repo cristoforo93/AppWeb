@@ -1,0 +1,12 @@
+{% extends 'Aula/base.html' %}
+
+
+{%block usuario%}
+
+<ul>
+    {% for curso in cursos %}
+    <li>  <a href="curso/" {{curso.codigo_curso}}>  {{curso.codigo_curso}} </a>   </li>
+    {%endfor%}
+</ul>
+
+{%endblock%}
